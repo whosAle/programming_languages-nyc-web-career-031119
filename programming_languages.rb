@@ -18,6 +18,7 @@ def reformat_languages(languages)
     # new_hash[lang] = {type: "", style: [style]}
     langs.each do |lang, type|
       if !new_hash.key?(lang)
+        puts !new_hash.key?(lang)
         new_hash[lang][:style]= []
       end
       new_hash[lang] = type
