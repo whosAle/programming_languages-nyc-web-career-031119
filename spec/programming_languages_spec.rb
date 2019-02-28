@@ -31,7 +31,7 @@ describe '#reformat_languages' do
         :javascript => {
           :type => "interpreted"
         }
-
+     
       }
     }
   }
@@ -70,7 +70,7 @@ describe '#reformat_languages' do
 
   it 'reformats scala properly' do
     scala = {:type => "compiled", :style => [:functional]}
-    scala.each { |k, v| expect(result[:scala][k]).to eq(k) }
+    scala.each { |k, v| expect(result[:scala][k]).to eq(v) }
   end
 
 end
