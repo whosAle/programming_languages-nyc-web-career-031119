@@ -7,7 +7,7 @@ def reformat_languages(languages)
     else
       lang[:style] << style.to_s
       lang.each do |type, tv|
-        new_hash[:type] << tv.strip
+        new_hash[:type] = tv
       end
     end
   end
