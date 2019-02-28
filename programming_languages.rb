@@ -5,9 +5,9 @@ def reformat_languages(languages)
     if !new_hash.key?(lang.to_s)
       new_hash[lang.to_s] = {type: "", style: []}
     else
-      lang[:style] << style
+      lang[:style] << style.to_s
       lang.each do |type, tv|
-        new_hash[:type] << tv
+        new_hash[:type] << tv.strip
       end
     end
   end
