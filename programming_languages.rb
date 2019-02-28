@@ -16,4 +16,4 @@ def reformat_languages(languages)
 
 end
 
-puts reformat_languages
+reformat_languages
