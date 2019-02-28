@@ -17,5 +17,6 @@ def reformat_languages(languages)
     new_hash[lang.to_s] = {type: "", style: []}
   end
   puts new_hash
+  new_hash
 
 end
