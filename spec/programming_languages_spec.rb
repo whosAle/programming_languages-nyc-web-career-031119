@@ -70,7 +70,7 @@ describe '#reformat_languages' do
 
   it 'reformats scala properly' do
     scala = {:type => "compiled", :style => [:functional]}
-    scala.each { |k, v| expect(result[:scala][k]).to eq(v) }
+    scala.each { |k, v| expect(result[:scala][k]).to eq([]) }
   end
 
 end
