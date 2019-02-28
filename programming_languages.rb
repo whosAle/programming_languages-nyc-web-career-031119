@@ -13,9 +13,9 @@ def reformat_languages(languages)
   #   end
   # end
 
-  languages.each do |style, lang|
-    new_hash[lang.to_s] = {type: "", style: []}
-  end
+  # languages.each do |style, lang|
+  #   new_hash[lang.to_s] = {type: "", style: []}
+  # end
   puts new_hash
   new_hash
 
