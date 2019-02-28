@@ -14,12 +14,12 @@ def reformat_languages(languages)
   # end
 
   languages.each do |style, langs|
-    puts langs
+    # puts langs
     # new_hash[lang] = {type: "", style: [style]}
     langs.each do |lang, type|
-      # if !new_hash.key?(lang)
-      #   new_hash[lang][:style]= []
-      # end
+      if !new_hash.key?(lang)
+        new_hash[lang][:style]= []
+      end
       new_hash[lang] = type
       new_hash[lang][:style] << style
 
